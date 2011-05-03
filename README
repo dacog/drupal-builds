@@ -1,0 +1,10 @@
+The files here were made by @daco to create drupal sites faster.
+
+Requirements: either Aegir Project or drupal drush and drupal drush make
+
+You are welcome to use them by downloading any .build file and running in the terminal (localhost or ssh)
+
+$drush make name_of_file.build destination
+
+
+You may also use them with your aegir installation. If you don't know aegir and you build/have some drupal sites, you should. Read more at http://www.aegirproject.org/
