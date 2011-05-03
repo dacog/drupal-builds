@@ -1,0 +1,51 @@
+;build file used by @daco to build stuffs
+;you may find more information about this file in github or at daco.in/dev/builds
+api = 2
+
+core = 6.x
+
+;to have localization right from the start
+projects[l10n_install-6.x][type] = "core"
+projects[l10n_install-6.x][download][type] = "file"
+projects[l10n_install-6.x][download][url] = "http://ftp.drupal.org/files/projects/l10n_install-6.x-1.0-beta3-core.tar.gz"
+
+;projects
+projects[] = views
+projects[] = cck
+projects[] = ctools
+projects[] = getclicky
+projects[] = google_analytics
+projects[] = admin_menu
+projects[] = contact_save
+projects[] = date
+projects[] = faq
+projects[] = globalredirect
+projects[] = imageapi
+projects[] = imagecache
+projects[] = imagefield
+projects[] = jquery_ui
+projects[] = jquery_update
+projects[] = menu_block
+projects[] = panels
+projects[] = pathauto
+projects[] = vertical_tabs
+projects[] = xmlsitemap
+projects[] = token
+projects[] = ctoolscustomplugins
+projects[] = filefield
+projects[] = filefield_nginx_progress
+projects[] = services
+projects[] = amfphp
+projects[] = json_server
+projects[] = location
+
+;libraries
+libraries[jquery_ui][download][type] = "file"
+libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
+libraries[jquery_ui][destination] = modules/jquery_ui/jquery.ui
+
+libraries[amfphp][download][type] = "file"
+libraries[amfphp][download][url] = "http://downloads.sourceforge.net/project/amfphp/amfphp/amfphp%201.9%20beta2/amfphp-1.9.beta.20080120.zip?r=&ts=1304377268&use_mirror=ufpr"
+libraries[amfphp][destination] = modules/amfphp/amfphp
+
+
