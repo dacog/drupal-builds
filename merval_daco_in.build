@@ -1,0 +1,16 @@
+;for merval.daco.in
+
+includes[base] = drupal-l10n-6x.build
+
+;now we add some modules to have services. The idea behind merval.daco.in is to create a repository of the Valparaíso-CL metro timetable (I don't like their site) and then be able to access the information with mobiles apps (android and iphone)
+
+;Services
+projects[] = services
+projects[] = amfphp
+projects[] = json_server
+projects[] = location
+
+;Libraries
+libraries[amfphp][download][type] = "file"
+libraries[amfphp][download][url] = "http://downloads.sourceforge.net/project/amfphp/amfphp/amfphp%201.9%20beta2/amfphp-1.9.beta.20080120.zip?r=&ts=1304377268&use_mirror=ufpr"
+libraries[amfphp][destination] = modules/amfphp/amfphp
